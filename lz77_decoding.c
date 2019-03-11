@@ -23,7 +23,17 @@ int main(int argc, char **argv) {
         exit(0);
     }
 
-    char *output_pgm_filename = argv[2];
+    clock_t start, end;
+    double cpu_time_used;
+
+    start = clock();
+
+    char *output_pgm_filename = argv[1];
     decode_using_lz77(output_pgm_filename);
+
+    end = clock();
+    cpu_time_used = ((double) (end - start) / CLOCKS_PER_SEC);
+
+    printf("Decoding Complete!\nElapsed time: %lf\n", cpu_time_used);
 
 }

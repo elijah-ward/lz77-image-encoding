@@ -1,4 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include "libpnm.h"
 
-void mean_absolute_error(char *filename_1_ptr, char *filename_2_ptr);
+float mean_absolute_error(char *filename_1_ptr, char *filename_2_ptr);

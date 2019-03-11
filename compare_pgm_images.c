@@ -25,9 +25,11 @@ int main(int argc, char **argv) {
         exit(0);
     }
 
-    char *input_pgm_filename_1 = argv[2];
-    char *input_pgm_filename_2 = argv[3];
+    char *input_pgm_filename_1 = argv[1];
+    char *input_pgm_filename_2 = argv[2];
 
-    mean_absolute_error(input_pgm_filename_1, input_pgm_filename_2);
+    float mae = mean_absolute_error(input_pgm_filename_1, input_pgm_filename_2);
+    printf("MAE is: %f\n", mae);
+
 
 }
