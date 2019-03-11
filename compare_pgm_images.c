@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include "mean_absolute_error.h"
 
+/**
+ * @brief      { validates arguments }
+ *
+ * @param[in]  argc  The argc
+ *
+ * @return     { status }
+ */
+
 int validate_args(int argc) {
     if (argc != 3) {
         printf("Usage: ./compare_pgm_images [input pgm image filename 1] [input pgm image filename 2]\nError on argument validation. Exiting...\n");

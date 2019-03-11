@@ -1,6 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lz77_encoding_function.h"
+
+/**
+ * @brief      { validates arguments }
+ *
+ * @param[in]  argc  The argc
+ *
+ * @return     { status }
+ */
 
 int validate_args(int argc) {
     if (argc != 3) {

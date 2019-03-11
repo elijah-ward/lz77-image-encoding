@@ -1,5 +1,18 @@
 #include "lz77_encoding_function.h"
 
+#define MAX_TOKENS 100000
+
+/**
+ * @brief      { encodes a file to lz77 format }
+ *
+ * @param      in_filename_PGM_ptr    The filename of PGM to be encoded
+ * @param[in]  searching_buffer_size  The searching buffer size
+ * @param      avg_offset_ptr         The average offset pointer
+ * @param      std_offset_ptr         The standard offset pointer
+ * @param      avg_length_ptr         The average length pointer
+ * @param      std_length_ptr         The standard length pointer
+ */
+
 void encode_using_lz77(
     char *in_filename_PGM_ptr,
     unsigned int searching_buffer_size,
